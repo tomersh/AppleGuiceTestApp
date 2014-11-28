@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2F069F4182BA77B0DDD9DB /* libPods-AppleGuiceTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418F33F51C339D23373B76 /* libPods-AppleGuiceTestApp.a */; };
+		4FC0E28002F27C8A99E264CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC937B3B0087FC559E7CB53 /* libPods.a */; };
 		705389181A26AB05004E75B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 705389171A26AB05004E75B7 /* main.m */; };
 		7053891B1A26AB05004E75B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7053891A1A26AB05004E75B7 /* AppDelegate.m */; };
 		7053891E1A26AB05004E75B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7053891D1A26AB05004E75B7 /* ViewController.m */; };
@@ -14,6 +16,9 @@
 		705389231A26AB05004E75B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705389221A26AB05004E75B7 /* Images.xcassets */; };
 		705389261A26AB05004E75B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705389241A26AB05004E75B7 /* LaunchScreen.xib */; };
 		705389321A26AB06004E75B7 /* AppleGuiceTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 705389311A26AB06004E75B7 /* AppleGuiceTestAppTests.m */; };
+		705389471A26AC09004E75B7 /* FakeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 705389461A26AC09004E75B7 /* FakeService.m */; };
+		70BBE23D1A28A89700911779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BBE23C1A28A89700911779 /* Foundation.framework */; };
+		70BBE2481A28BF8700911779 /* libAppleGuicePreCompileBinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BBE2451A28BF5F00911779 /* libAppleGuicePreCompileBinder.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +29,24 @@
 			remoteGlobalIDString = 705389111A26AB05004E75B7;
 			remoteInfo = AppleGuiceTestApp;
 		};
+		70BBE2441A28BF5F00911779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BBE2401A28BF5F00911779 /* AppleGuicePreCompileBinder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F1D267E418046554003595C1;
+			remoteInfo = AppleGuicePreCompileBinder;
+		};
+		70BBE2461A28BF6F00911779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BBE2401A28BF5F00911779 /* AppleGuicePreCompileBinder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D267E318046554003595C1;
+			remoteInfo = AppleGuicePreCompileBinder;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41D464D4FCA64786F43F1927 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		705389121A26AB05004E75B7 /* AppleGuiceTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleGuiceTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		705389161A26AB05004E75B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705389171A26AB05004E75B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +60,18 @@
 		7053892B1A26AB05004E75B7 /* AppleGuiceTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleGuiceTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705389301A26AB06004E75B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705389311A26AB06004E75B7 /* AppleGuiceTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleGuiceTestAppTests.m; sourceTree = "<group>"; };
+		705389451A26AC09004E75B7 /* FakeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeService.h; sourceTree = "<group>"; };
+		705389461A26AC09004E75B7 /* FakeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeService.m; sourceTree = "<group>"; };
+		70BBE2381A28A86500911779 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		70BBE23A1A28A88700911779 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		70BBE23C1A28A89700911779 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		70BBE23E1A28A90100911779 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		70BBE2401A28BF5F00911779 /* AppleGuicePreCompileBinder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppleGuicePreCompileBinder.xcodeproj; path = AppleGuicePreCompileBinder/AppleGuicePreCompileBinder.xcodeproj; sourceTree = "<group>"; };
+		7A643E1A93CA5A2379FE9BC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7C418F33F51C339D23373B76 /* libPods-AppleGuiceTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppleGuiceTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9D90A50C9585A5675E0D3E /* Pods-AppleGuiceTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleGuiceTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppleGuiceTestApp/Pods-AppleGuiceTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		9AC937B3B0087FC559E7CB53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4170A1D009D667B0AE031E /* Pods-AppleGuiceTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleGuiceTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppleGuiceTestApp/Pods-AppleGuiceTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BBE2481A28BF8700911779 /* libAppleGuicePreCompileBinder.a in Frameworks */,
+				70BBE23D1A28A89700911779 /* Foundation.framework in Frameworks */,
+				1F2F069F4182BA77B0DDD9DB /* libPods-AppleGuiceTestApp.a in Frameworks */,
+				4FC0E28002F27C8A99E264CA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +96,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073162B5E8B2F8CE26194B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70BBE23E1A28A90100911779 /* libxml2.dylib */,
+				70BBE23C1A28A89700911779 /* Foundation.framework */,
+				70BBE23A1A28A88700911779 /* Security.framework */,
+				70BBE2381A28A86500911779 /* SystemConfiguration.framework */,
+				7C418F33F51C339D23373B76 /* libPods-AppleGuiceTestApp.a */,
+				9AC937B3B0087FC559E7CB53 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13D6C41B40554ED3D9952819 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD4170A1D009D667B0AE031E /* Pods-AppleGuiceTestApp.debug.xcconfig */,
+				9A9D90A50C9585A5675E0D3E /* Pods-AppleGuiceTestApp.release.xcconfig */,
+				41D464D4FCA64786F43F1927 /* Pods.debug.xcconfig */,
+				7A643E1A93CA5A2379FE9BC1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		705389091A26AB05004E75B7 = {
 			isa = PBXGroup;
 			children = (
+				70BBE2401A28BF5F00911779 /* AppleGuicePreCompileBinder.xcodeproj */,
 				705389141A26AB05004E75B7 /* AppleGuiceTestApp */,
 				7053892E1A26AB05004E75B7 /* AppleGuiceTestAppTests */,
 				705389131A26AB05004E75B7 /* Products */,
+				13D6C41B40554ED3D9952819 /* Pods */,
+				073162B5E8B2F8CE26194B95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +149,7 @@
 				7053891C1A26AB05004E75B7 /* ViewController.h */,
 				7053891D1A26AB05004E75B7 /* ViewController.m */,
 				7053891F1A26AB05004E75B7 /* Main.storyboard */,
+				705389441A26ABF3004E75B7 /* FakeService */,
 				705389221A26AB05004E75B7 /* Images.xcassets */,
 				705389241A26AB05004E75B7 /* LaunchScreen.xib */,
 				705389151A26AB05004E75B7 /* Supporting Files */,
@@ -119,6 +183,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		705389441A26ABF3004E75B7 /* FakeService */ = {
+			isa = PBXGroup;
+			children = (
+				705389451A26AC09004E75B7 /* FakeService.h */,
+				705389461A26AC09004E75B7 /* FakeService.m */,
+			);
+			path = FakeService;
+			sourceTree = "<group>";
+		};
+		70BBE2411A28BF5F00911779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70BBE2451A28BF5F00911779 /* libAppleGuicePreCompileBinder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,13 +207,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 705389351A26AB06004E75B7 /* Build configuration list for PBXNativeTarget "AppleGuiceTestApp" */;
 			buildPhases = (
+				CB0EBB203CE02C0EE41755F2 /* Check Pods Manifest.lock */,
 				7053890E1A26AB05004E75B7 /* Sources */,
 				7053890F1A26AB05004E75B7 /* Frameworks */,
 				705389101A26AB05004E75B7 /* Resources */,
+				E965AFF12B8132310BDCBB40 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70BBE2471A28BF6F00911779 /* PBXTargetDependency */,
 			);
 			name = AppleGuiceTestApp;
 			productName = AppleGuiceTestApp;
@@ -186,6 +270,12 @@
 			mainGroup = 705389091A26AB05004E75B7;
 			productRefGroup = 705389131A26AB05004E75B7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 70BBE2411A28BF5F00911779 /* Products */;
+					ProjectRef = 70BBE2401A28BF5F00911779 /* AppleGuicePreCompileBinder.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				705389111A26AB05004E75B7 /* AppleGuiceTestApp */,
@@ -193,6 +283,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		70BBE2451A28BF5F00911779 /* libAppleGuicePreCompileBinder.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppleGuicePreCompileBinder.a;
+			remoteRef = 70BBE2441A28BF5F00911779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		705389101A26AB05004E75B7 /* Resources */ = {
@@ -214,11 +314,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CB0EBB203CE02C0EE41755F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E965AFF12B8132310BDCBB40 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7053890E1A26AB05004E75B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705389471A26AC09004E75B7 /* FakeService.m in Sources */,
 				7053891E1A26AB05004E75B7 /* ViewController.m in Sources */,
 				7053891B1A26AB05004E75B7 /* AppDelegate.m in Sources */,
 				705389181A26AB05004E75B7 /* main.m in Sources */,
@@ -240,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = 705389111A26AB05004E75B7 /* AppleGuiceTestApp */;
 			targetProxy = 7053892C1A26AB05004E75B7 /* PBXContainerItemProxy */;
+		};
+		70BBE2471A28BF6F00911779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppleGuicePreCompileBinder;
+			targetProxy = 70BBE2461A28BF6F00911779 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,6 +480,7 @@
 		};
 		705389361A26AB06004E75B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D464D4FCA64786F43F1927 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleGuiceTestApp/Info.plist;
@@ -351,6 +491,7 @@
 		};
 		705389371A26AB06004E75B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A643E1A93CA5A2379FE9BC1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleGuiceTestApp/Info.plist;
@@ -412,6 +553,7 @@
 				705389371A26AB06004E75B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705389381A26AB06004E75B7 /* Build configuration list for PBXNativeTarget "AppleGuiceTestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +562,7 @@
 				7053893A1A26AB06004E75B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

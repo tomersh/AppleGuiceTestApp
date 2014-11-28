@@ -1,0 +1,10 @@
+PODS:
+  - AppleGuice (1.2.2)
+
+DEPENDENCIES:
+  - AppleGuice
+
+SPEC CHECKSUMS:
+  AppleGuice: e7c1c0574025960cbf789b69f436503cdd73de4f
+
+COCOAPODS: 0.34.1

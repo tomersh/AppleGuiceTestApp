@@ -1,0 +1,1 @@
+../../../AppleGuice/AppleGuice/AppleGuiceMockProviderProtocol.h

@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "FakeService.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) id<Injectable> fakeService;
 
 @end
 
@@ -16,12 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    NSLog(@"service = %@", self.fakeService);
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.fakeService doSomeWork];
 }
 
 @end
