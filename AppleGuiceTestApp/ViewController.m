@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) id<Injectable> fakeService;
+@property (nonatomic, strong) id<Injectable> ioc_fakeService;
 
 @end
 
@@ -19,9 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"service = %@", self.fakeService);
+    NSLog(@"service = %@", self.ioc_fakeService);
 
-    [self.fakeService doSomeWork];
+    [self.ioc_fakeService doSomeWork];
 }
 
 @end
