@@ -15,9 +15,11 @@
 
 @implementation AppDelegate
 
++(void) initialize {
+    [AppleGuice startService];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AppleGuice startService];
     return YES;
 }
 

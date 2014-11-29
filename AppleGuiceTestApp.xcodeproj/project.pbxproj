@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2F069F4182BA77B0DDD9DB /* libPods-AppleGuiceTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418F33F51C339D23373B76 /* libPods-AppleGuiceTestApp.a */; };
 		4FC0E28002F27C8A99E264CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC937B3B0087FC559E7CB53 /* libPods.a */; };
 		705389181A26AB05004E75B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 705389171A26AB05004E75B7 /* main.m */; };
 		7053891B1A26AB05004E75B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7053891A1A26AB05004E75B7 /* AppDelegate.m */; };
@@ -81,7 +80,6 @@
 			files = (
 				70BBE2481A28BF8700911779 /* libAppleGuicePreCompileBinder.a in Frameworks */,
 				70BBE23D1A28A89700911779 /* Foundation.framework in Frameworks */,
-				1F2F069F4182BA77B0DDD9DB /* libPods-AppleGuiceTestApp.a in Frameworks */,
 				4FC0E28002F27C8A99E264CA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

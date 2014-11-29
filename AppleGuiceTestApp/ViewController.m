@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "FakeService.h"
-
+#import <AppleGuice/AppleGuice.h>
 @interface ViewController ()
 
 @property (nonatomic, strong) id<Injectable> ioc_fakeService;
@@ -17,10 +17,18 @@
 
 @implementation ViewController
 
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [AppleGuice injectImplementationsToInstance:self];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"service = %@", self.ioc_fakeService);
-
     [self.ioc_fakeService doSomeWork];
 }
 
